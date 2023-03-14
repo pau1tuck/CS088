@@ -67,9 +67,11 @@ Unlike syntax and semantics, style is very much a subjective matter. For the sak
 
 Let’s learn some style tips that will take your C++ code to the next level!
 
+---
+
 ### Include Statements
 
-`include` statements give us access to functionalities from header file libraries. As a rule of thumb, include statements are mostly written at the beginning of any C++ program. **Include headers** should be listed in the following order:
+`#include` statements give us access to functionalities from header file libraries. As a rule of thumb, `#include` statements are mostly written at the beginning of any C++ program. **Include headers** should be listed in the following order:
 
 1. C system headers
 2. C++ standard library headers
@@ -87,3 +89,110 @@ Let’s learn some style tips that will take your C++ code to the next level!
 
 // The rest of your code goes here…
 ```
+
+---
+
+### Naming Conventions
+
+Generally speaking, the best names are those that can be immediately understood by a new reader. Names should capture their context in the program without being too long.
+
+Regardless of the type, a name in C++ can never start with a digit. You should also avoid using the name of a predefined C++ keyword for your own variable or class.
+
+User-defined _class names_ and _function names_ use **Pascal case**, which starts with a capital letter and has a capital letter for each new word, with no underscores.
+
+**Examples:**
+
+**`LinkedList` or `BubbleSort()`**
+
+Variable names are all lowercase and **snake case**, i.e., with underscores between words.
+
+**Examples:**
+
+`student_id` or `result`
+
+---
+
+### Punctuation Marks
+
+#### Brackets {}
+
+The open bracket should be on the same line as the statement. The closing bracket should be placed under the last line of code in the scope.
+
+#### Parentheses ()
+
+There should be no space between parentheses and the code inside. When parentheses are used in a statement, there should be a space before ( and a space after ). When parentheses are used as part of a class or function, only a space after ) is sufficient.
+
+#### Commas ,
+
+There should always be a blank space after each comma.
+
+Let’s put them together in one example:
+
+```cpp
+int GetLargerNumber(int num_one, int num_two) {
+  if (num_one > num_two) {
+    return num_one;
+  }
+  else {
+    return num_two;
+  }
+}
+```
+---
+
+### Formatting
+
+#### Spacing
+
+Types, variable, operators, and literal values should be separated by one space horizontally like so:
+
+`string message = "Hello World!";`
+
+Classes, functions, global variables declarations, and preprocessor directives (eg. `#include`) should be separated by one space vertically:
+
+```cpp
+#include <iostream>    // preprocessor directive
+
+float pi = 3.1415;    // global variable
+
+class MyClass {        // class
+  public:
+    myClass() {
+  }
+};
+
+int main() {        // function
+  return 0;
+}
+```
+
+#### Indentation
+
+All indentations should be two spaces at a time. There should be an indentation each time a new block (eg. loop, method, etc) is opened, as seen in the examples above. Do NOT use tabs in your code unless your editor is set to emit two spaces on tab.
+
+```cpp
+// Good: two spaces
+if (n == 3) {
+  std:cout << "Fizz";
+}
+
+// Bad: tab or four spaces
+if (n == 5) {
+    std:cout << "Buzz";
+}
+```
+
+#### Line Length
+
+Each line of text in your code should be at most 80 characters long. Programmers set up their work environment assuming a particular maximum window width, and 80 columns have been the traditional standard. You do not need to follow this rule as strictly as the others - just be mindful of lines that extend for too long.
+
+```cpp
+// This function name is too long
+ReturnType LongClassName::ReallyReallyReallyLongFunctionName(Type par_name1, Type par_name2, Type par_name3)
+```
+
+---
+
+### Moving Forward
+
+This guide serves as an introduction to some of the basic style conventions for writing C++ code. You should keep these rules in mind as we move forward in this course. If you are confused about any specific style rules, be on the lookout for example code blocks because they will always follow the same style.
