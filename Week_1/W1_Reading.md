@@ -69,13 +69,15 @@ Let’s learn some style tips that will take your C++ code to the next level!
 
 ---
 
-### Include Statements
+### `#include` Statements
 
 `#include` statements give us access to functionalities from header file libraries. As a rule of thumb, `#include` statements are mostly written at the beginning of any C++ program. **Include headers** should be listed in the following order:
 
 1. C system headers
 2. C++ standard library headers
 3. User-defined libraries’ headers.
+
+Notice there is no semi-colon after an `#include` statement.
 
 ```cpp
 // C system headers
@@ -122,7 +124,7 @@ The open bracket should be on the same line as the statement. The closing bracke
 
 There should be no space between parentheses and the code inside. When parentheses are used in a statement, there should be a space before ( and a space after ). When parentheses are used as part of a class or function, only a space after ) is sufficient.
 
-#### Commas ,
+#### Commas
 
 There should always be a blank space after each comma.
 
@@ -138,6 +140,7 @@ int GetLargerNumber(int num_one, int num_two) {
   }
 }
 ```
+
 ---
 
 ### Formatting
