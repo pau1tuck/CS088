@@ -63,7 +63,7 @@ int main() {    // Does some stuff
   cout << M;;  return (3);}
 ```
 
-Unlike syntax and semantics, style is very much a subjective matter. For the sake of consistency, we will follow [Google’s C++ Style Guide]<https://google.github.io/styleguide/cppguide.html#cpplint> in this article and throughout this course.
+Unlike syntax and semantics, style is very much a subjective matter. For the sake of consistency, we will follow [Google’s C++ Style Guide](https://google.github.io/styleguide/cppguide.html#cpplint) in this article and throughout this course.
 
 Let’s learn some style tips that will take your C++ code to the next level!
 

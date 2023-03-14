@@ -2,4 +2,4 @@
 
 Course Instructor: Paul D.R. Tuck
 Office: South Campus IR319 (available by appointment)
-Email: [paul.tuck@liverpool.ac.uk]<mailto:paul.tuck@liverpool.ac.uk>
+Email: [paul.tuck@liverpool.ac.uk](mailto:paul.tuck@liverpool.ac.uk)
